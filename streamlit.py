@@ -6,15 +6,15 @@ from tab_ressources import tab_ressources
 
 #sl.set_page_config(layout = 'wide')
 
+sl.sidebar.title('CinéCode')
+
 tabs = {'Recommendation de film': tab_main,
 		'Dataviz': tab_dataviz,
 		'CinéCode': tab_cinecode,
 		'Ressources': tab_ressources
 		}
-tab_selection = sl.sidebar.radio('Menu', list(tabs.keys()))
+tab_selection = sl.sidebar.radio('', list(tabs.keys()))
 tabs[tab_selection]()
-
-sl.sidebar.write('test')
 
 sl.divider()
 sl.caption('**CinéCode** - un projet à la [Wild Code School](https://www.wildcodeschool.com/)')

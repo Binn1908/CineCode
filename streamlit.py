@@ -4,7 +4,7 @@ from tab_dataviz import tab_dataviz
 from tab_cinecode import tab_cinecode
 from tab_ressources import tab_ressources
 
-sl.set_page_config(layout = 'wide')
+#sl.set_page_config(layout = 'wide')
 
 tabs = {'Recommendation de film': tab_main,
 		'Dataviz': tab_dataviz,

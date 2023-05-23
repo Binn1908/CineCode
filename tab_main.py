@@ -25,7 +25,7 @@ cast_options = pd.read_csv('cast.csv', sep = ',')
 #access key for IMDb API
 headers = {
 	'x-rapidapi-host': 'imdb8.p.rapidapi.com',
-	'x-rapidapi-key': rapid_api_key
+	'x-rapidapi-key': sl.secrets['rapid_api_key']
     }
 
 def tab_main():

@@ -11,31 +11,51 @@ df = pd.read_csv('imdb_final.csv', sep = ',')
 def tab_dataviz():
 	sl.title('Dataviz')
 
+	sl.subheader('IMDb')
+
+	tab1, tab2, tab3, tab4 = sl.tabs([
+		'Distribution par type',
+		'Nombre de films par année',
+		'Distribution par région',
+		'Distribution par sexe'
+		])
+
 	#visuel 1
-	sl.subheader('Distribution par titleType')
+	tab1.subheader('Distribution par type')
 	image_title_type = Image.open('title_type.png')
-	sl.image(image_title_type)
+	tab1.image(image_title_type)
 
 	#visuel 2
-	sl.subheader('Nombre de films au fils des années')
+	tab2.subheader('Nombre de films au fils des années')
 	image_number_movies = Image.open('number_movies.png')
-	sl.image(image_number_movies)
+	tab2.image(image_number_movies)
 
 	#visuel 3
-	sl.subheader('Distribution par région')
+	tab3.subheader('Distribution par région')
 	image_regions = Image.open('regions.png')
-	sl.image(image_regions)
+	tab3.image(image_regions)
 
 	#visuel 4
-	sl.subheader('Distribution par sexe')
-	col1, col2, col3 = sl.columns([1,1,1])
+	tab4.subheader('Distribution par sexe')
 	image_gender = Image.open('gender.png')
-	col2.image(image_gender)
+	with tab4:
+		col1, col2, col3 = sl.columns([1,1,1])
+		col2.image(image_gender)
 
 	sl.divider()
 
+	sl.subheader('IMDb final')
+
+	tab1, tab2, tab3, tab4, tab5 = sl.tabs([
+		'Top 10 des films',
+		'Top 10 des réalisateurs',
+		'Top 10 des scénaristes',
+		'Top 10 des acteurs/actrices',
+		'Distribution par genre'
+		])
+
 	#visuel 5
-	sl.subheader('Top 10 des films')
+	tab1.subheader('Top 10 des films')
 	
 	#pondération
 	v = df['numVotes']
@@ -52,12 +72,10 @@ def tab_dataviz():
 	ax1.invert_yaxis()
 	plt.xlabel('Score pondéré')
 	plt.style.use('seaborn')
-	sl.pyplot(fig)
-
-	col1, col2 = sl.columns([1,1])
+	tab1.pyplot(fig)
 
 	#visuel 6
-	col1.subheader('Top 10 des réalisateurs')
+	tab2.subheader('Top 10 des réalisateurs')
 	x = df['director'].value_counts().head(10)
 	y = df['director'].value_counts().head(10).index
 	fig, ax = plt.subplots()
@@ -66,10 +84,10 @@ def tab_dataviz():
 	ax1.invert_yaxis()
 	plt.xlabel('Nombre de films')
 	plt.style.use('seaborn')
-	col1.pyplot(fig)
+	tab2.pyplot(fig)
 
 	#visuel 7
-	col2.subheader('Top 10 des scénaristes')
+	tab3.subheader('Top 10 des scénaristes')
 	x = df['writer'].value_counts().head(10)
 	y = df['writer'].value_counts().head(10).index
 	fig, ax = plt.subplots()
@@ -78,10 +96,10 @@ def tab_dataviz():
 	ax1.invert_yaxis()
 	plt.xlabel('Nombre de films')
 	plt.style.use('seaborn')
-	col2.pyplot(fig)
+	tab3.pyplot(fig)
 
 	#visuel 8
-	sl.subheader('Top 10 des acteurs/actrices')
+	tab4.subheader('Top 10 des acteurs/actrices')
 	x = df['cast'].value_counts().head(10)
 	y = df['cast'].value_counts().head(10).index
 	fig, ax = plt.subplots()
@@ -90,9 +108,9 @@ def tab_dataviz():
 	ax1.invert_yaxis()
 	plt.xlabel('Nombre de films')
 	plt.style.use('seaborn')
-	sl.pyplot(fig)
+	tab4.pyplot(fig)
 
 	#visuel 9
-	sl.subheader('Distribution par genre')
+	tab5.subheader('Distribution par genre')
 	image_genres = Image.open('genres.png')
-	sl.image(image_genres)
+	tab5.image(image_genres)

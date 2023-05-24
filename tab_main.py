@@ -47,7 +47,7 @@ def tab_main():
 			#input user choice in k-NN model
 			propo = model.kneighbors(X.loc[imdb['originalTitle'] == user_favorite])
 			
-			sl.write('Excellent choix ! Voici nos recommendations :')
+			sl.write('Excellent choix ! Voici nos recommandations :')
 			for n in range(1,4):
 				tconst = imdb.iloc[propo[1][0][n], 0]
 				title = imdb.iloc[propo[1][0][n], 1]
@@ -135,7 +135,7 @@ def tab_main():
 		#input template in k-NN model
 		propo = model.kneighbors([template.iloc[0]])
 		
-		sl.write('Voici nos recommendations :')
+		sl.write('Voici nos recommandations :')
 		for n in range(1,4):
 			tconst = imdb.iloc[propo[1][0][n], 0]
 			title = imdb.iloc[propo[1][0][n], 1]

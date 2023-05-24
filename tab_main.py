@@ -29,9 +29,10 @@ headers = {
     }
 
 def tab_main():
-	sl.title('Recommendation de films')
-	sl.write('Bonjour la Creuse !')
-	sl.write('...')
+	sl.title('CinéFlix')
+	sl.write('Bienvenue...')
+	
+	sl.subheader('Recherche par film')
 	
 	#ask user for a movie
 	with sl.form('simple_search'):

@@ -3,23 +3,35 @@ import streamlit as sl
 def tab_cinecode():
 	sl.title('CinéCode')
 
-	sl.subheader("L'équipe")
+	tab1, tab2, tab3, tab4 = sl.tabs([
+		'CinéCode',
+		'Notre démarche',
+		'Machine Learning',
+		'Revue'
+		])
 
-	sl.subheader('La mission')
-	sl.write("création d'un outil de recommandation de films...")
+	with tab1:
+		sl.subheader("L'équipe")
+		sl.write('Chinnawat, Jacques, Khalid')
 
-	sl.subheader('Notre démarche')
-	sl.write("sélection des films sur la base de données d'IMDb...")
+		sl.subheader('Mission')
+		sl.write("- création d'un outil de recommandation de films...")
 
-	sl.subheader('Outils utilisés')
-	sl.write('Pandas, Matplotlib, scikit-learn, Streamlit, API...')
+	with tab2:
+		sl.subheader('Notre démarche')
+		sl.write("- sélection des films sur la base des données d'IMDb...")
 
-	sl.subheader('Machine Learning')
-	sl.write('k-NN...')
+		sl.subheader('Outils utilisés')
+		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, API...')
 
-	sl.subheader('Difficultés rencontrées')
-	sl.write('manque de diversité (genres), dataset trop volumineux...')
+	with tab3:
+		sl.subheader('Machine Learning')
+		sl.write('- k-NN...')
 
-	sl.subheader("Points d'amélioration")
-	sl.write("pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs (vu que le format pickle permet des fichiers plus légers)")
-	sl.write('dataviz : permettre la sélection de critères pour filtrer les résultats')
+	with tab4:
+		sl.subheader('Difficultés rencontrées')
+		sl.write('- manque de diversité (genres)')
+		sl.write('- dataset trop volumineux...')
+
+		sl.subheader("Points d'amélioration")
+		sl.write("- pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs (vu que le format pickle permet des fichiers plus légers)")

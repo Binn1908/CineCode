@@ -35,7 +35,7 @@ def tab_main():
 	
 	#ask user for a movie
 	with sl.form('simple_search'):
-		user_favorite = sl.selectbox('Sélectionnez un film.', movie_options)
+		user_favorite = sl.selectbox('Sélectionner un film.', movie_options)
 		submit_simple = sl.form_submit_button('Envoyer')
 
 	#return film recommendations
@@ -73,13 +73,13 @@ def tab_main():
 				col2.write(f'**Note IMDb:** {score}/10')
 				col2.write(synopsis)
 				#url_imdb_cast = url_imdb + '/fullcredits'
-				#sl.markdown(f'**[casting principal]({url_imdb_cast})**')
+				#col2.markdown(f'**[casting principal]({url_imdb_cast})**')
 
 	sl.divider()
 
 	sl.subheader('Recherche avancée')
 
-	#ask user for genre, director, writer and cast
+	#ask user for genre, director, writer and/or cast
 	with sl.form('advanced_search'):
 		genre = sl.multiselect('Genre', genre_options, max_selections = 3)
 		director = sl.multiselect('Réalisateur', director_options, max_selections = 3)

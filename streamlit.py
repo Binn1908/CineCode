@@ -12,7 +12,7 @@ from tab_ressources import tab_ressources
 affiche = Image.open('affiche.png')
 sl.sidebar.image(affiche)
 
-tabs = {'Recommandation de film': tab_main,
+tabs = {'CinéFlix': tab_main,
 		'Dataviz': tab_dataviz,
 		'CinéCode': tab_cinecode,
 		'Ressources': tab_ressources
@@ -21,4 +21,4 @@ tab_selection = sl.sidebar.radio('', list(tabs.keys()))
 tabs[tab_selection]()
 
 sl.divider()
-sl.caption('**CinéCode** - un projet à la [Wild Code School](https://www.wildcodeschool.com/)')
+sl.caption('**CinéFlix by CinéCode** - un projet à la [Wild Code School](https://www.wildcodeschool.com/)')

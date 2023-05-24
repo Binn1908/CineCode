@@ -49,10 +49,10 @@ def tab_dataviz():
 	sl.subheader('IMDb (sélection CinéCode)')
 
 	tab5, tab6, tab7, tab8, tab9 = sl.tabs([
-		'Top 10 des films',
-		'Top 10 des réalisateurs',
-		'Top 10 des scénaristes',
-		'Top 10 des acteurs/actrices',
+		'Films',
+		'Réalisateurs',
+		'Scénaristes',
+		'Acteurs/Actrices',
 		'Distribution par genre'
 		])
 

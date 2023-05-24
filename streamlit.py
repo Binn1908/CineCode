@@ -1,3 +1,4 @@
+from PIL import Image
 import streamlit as sl
 from tab_main import tab_main
 from tab_dataviz import tab_dataviz

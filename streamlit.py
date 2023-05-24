@@ -6,9 +6,12 @@ from tab_ressources import tab_ressources
 
 #sl.set_page_config(layout = 'wide')
 
-sl.sidebar.title('CinéCode')
+#sl.sidebar.title('CinéCode')
 
-tabs = {'Recommendation de film': tab_main,
+affiche = Image.open('affiche.png')
+sl.sidebar.image(affiche)
+
+tabs = {'Recommandation de film': tab_main,
 		'Dataviz': tab_dataviz,
 		'CinéCode': tab_cinecode,
 		'Ressources': tab_ressources

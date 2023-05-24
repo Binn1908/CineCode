@@ -32,8 +32,8 @@ def tab_main():
 	sl.title('CinéFlix')
 	sl.write('Bienvenue...')
 	
-	sl.subheader('Recherche par film')
-	
+	sl.write("<span style='font-size: 29px; color: #F8B405;'>Recherche par film</span>", unsafe_allow_html=True)
+
 	#ask user for a movie
 	with sl.form('simple_search'):
 		user_favorite = sl.selectbox('Sélectionner un film.', movie_options)
@@ -78,7 +78,7 @@ def tab_main():
 
 	sl.divider()
 
-	sl.subheader('Recherche avancée')
+	sl.write("<span style='font-size: 29px; color: #F8B405;'>Recherche avancée</span>", unsafe_allow_html=True)
 
 	#ask user for genre, director, writer and/or cast
 	with sl.form('advanced_search'):

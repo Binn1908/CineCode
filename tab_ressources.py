@@ -3,7 +3,7 @@ import streamlit as sl
 def tab_ressources():
 	sl.title('Ressources')
 
-	sl.subheader('Source des données')
+	sl.subheader('IMDb')
 	sl.write('[Les datasets](https://datasets.imdbws.com/)')
 	sl.write('[Documentation](https://developer.imdb.com/non-commercial-datasets/)')
 

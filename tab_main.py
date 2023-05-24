@@ -36,7 +36,7 @@ def tab_main():
 
 	#ask user for a movie
 	with sl.form('simple_search'):
-		user_favorite = sl.selectbox('Sélectionner un film.', movie_options)
+		user_favorite = sl.selectbox('Sélectionner un film', movie_options)
 		submit_simple = sl.form_submit_button('Envoyer')
 
 	#return film recommendations

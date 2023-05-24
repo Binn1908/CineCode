@@ -30,7 +30,7 @@ headers = {
 
 def tab_main():
 	sl.title('CinéFlix')
-	sl.write('Bienvenue...')
+	sl.write('Découvrez de nouveaux films passionnants qui correspondent à vos goûts grâce à notre application de recommandation de film. Répondez à quelques questions simples et laissez notre algorithme vous présenter une sélection personnalisée de films. Plongez dans un univers cinématographique captivant et explorez des histoires qui vous transporteront !')
 	
 	sl.write("<span style='font-size: 29px; color: #F8B405;'>Recherche par film</span>", unsafe_allow_html=True)
 

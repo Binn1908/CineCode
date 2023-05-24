@@ -15,7 +15,7 @@ df['score'] = round(((v/(v+m)) * R) + ((m/(v+m)) * C), 2)
 def tab_dataviz():
 	sl.title('Dataviz')
 
-	sl.subheader('IMDb')
+	sl.write("<span style='font-size: 29px; color: #F8B405;'>IMDb</span>", unsafe_allow_html=True)
 
 	tab1, tab2, tab3, tab4 = sl.tabs([
 		'Distribution par type',
@@ -46,7 +46,7 @@ def tab_dataviz():
 
 	sl.divider()
 
-	sl.subheader('IMDb (sélection CinéCode)')
+	sl.write("<span style='font-size: 29px; color: #F8B405;'>CinéFlix</span>", unsafe_allow_html=True)
 
 	tab5, tab6, tab7, tab8, tab9 = sl.tabs([
 		'Films',

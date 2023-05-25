@@ -15,7 +15,7 @@ def tab_cinecode():
 		sl.write('Chinnawat, Jacques, Khalid')
 
 		sl.subheader('Mission')
-		sl.write("- création d'un outil de recommandation de films...")
+		sl.write("- Analyse d’une base de données IMDB et création d’un outil de recommandation de film sur cette même base de données après un nettoyage des données")
 
 	with tab2:
 		sl.subheader('Notre démarche')

@@ -18,7 +18,7 @@ def tab_cinecode():
 		col3.write('Khalid')
 
 		sl.subheader('Mission')
-		sl.write("- Analyse d’une base de données IMDb et création d’un outil de recommandation de films pour un cinéma souhaitant passer le cap du digital")		
+		sl.write("- Création d'un outil de recommandation de films pour un cinéma dans la Creuse souhaitant passer le cap du digital en se basant sur une sélection de films de la base de données IMDb")		
 
 	with tab2:
 		sl.subheader('Notre démarche')

@@ -22,13 +22,13 @@ def tab_cinecode():
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents :")
+		sl.write("- **Exploration et nettoyage de la BDD IMDb** afin de proposer aux locaux de la Creuse une sélection de films pertinents :")
 		sl.write("	- éliminer les données inutiles")
 		sl.write("	- corriger les erreurs")
 		sl.write("	- fusionner les différents datasets")
 		sl.write("	- normaliser les formats et filtrer les données")
-		sl.write("- Utilisation d'un algorithme de machine learning pour recommander des films en fonction de films qui ont été appréciés par le spectateur")
-		sl.write("- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les propositions")
+		sl.write("- **Utilisation d'un algorithme de machine learning** pour recommander des films en fonction de films qui ont été appréciés par le spectateur")
+		sl.write("- **Création d’une interface utilisateur conviviale** en utilisant Streamlit pour présenter les propositions")
 			 			
 		sl.subheader('Outils utilisés')
 		sl.write("- Analyse et nettoyage des données : Pandas, Matplotlib")
@@ -37,7 +37,7 @@ def tab_cinecode():
 
 	with tab3:
 		sl.subheader('Machine Learning')
-		sl.write("- Utilisation de l’algorithme KNN (K plus proches voisins) en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
+		sl.write("- Utilisation de l’algorithme **KNN** (K plus proches voisins) en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
 
 	with tab4:
 		sl.subheader('Difficultés rencontrées')

@@ -45,5 +45,5 @@ def tab_cinecode():
 		sl.write("- Volume du dataset final important : ralentissement du moteur de recommandation")
 		
 		sl.subheader("Points d'amélioration")
-		sl.write("- Pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs")
+		sl.write("- Pour affiner les résultats : retravailler le dataset avec plus de choix")
 		sl.write("- Traduction des synopsis en français")

@@ -22,15 +22,18 @@ def tab_cinecode():
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents")
+		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents :")
 		sl.write("	- éliminer les données inutiles")
 		sl.write("	- corriger les erreurs")
 		sl.write("	- fusionner les différents datasets")
 		sl.write("	- normaliser les formats et filtrer les données")
-		sl.write("- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films")
-			 
+		sl.write("- Utilisation d'un algorithme de machine learning pour recommander des films en fonction de films qui ont été appréciés par le spectateur")
+		sl.write("- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les propositions")
+			 			
 		sl.subheader('Outils utilisés')
-		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, IMDb API')
+		sl.write("- Analyse et nettoyage des données : Pandas, Matplotlib")
+		sl.write("- Machine learning : Scikit-learn")
+		sl.write("- Expérience utilisateur : Streamlit, IMDb API")
 
 	with tab3:
 		sl.subheader('Machine Learning')

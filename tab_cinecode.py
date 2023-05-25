@@ -18,19 +18,19 @@ def tab_cinecode():
 		col3.write('Khalid')
 
 		sl.subheader('Mission')
-		sl.write("- Analyse d’une base de données IMDB et création d’un outil de recommandation de films sur cette même base de données après un nettoyage des données")
+		sl.write("- Analyse d’une base de données IMDb et création d’un outil de recommandation de films pour un cinéma en difficulté")		
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write('- Nettoyer la BDD IMDB afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données.')
+		sl.write("- Nettoyer la BDD IMDd afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données.")
 		sl.write('- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation.')
 			 
 		sl.subheader('Outils utilisés')
-		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, API...')
+		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, IMDb API')
 
 	with tab3:
 		sl.subheader('Machine Learning')
-		sl.write("- KNN : Nous avons choisi d’utiliser l’algorithme KNN (proches voisins) pour notre projet de recommandation de films en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
+		sl.write("- KNN : Nous avons choisi d’utiliser l’algorithme KNN (proches voisins) en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
 
 	with tab4:
 		sl.subheader('Difficultés rencontrées')
@@ -38,4 +38,5 @@ def tab_cinecode():
 		sl.write('- Filtrer la base de données sans perdre des films cultes/classiques')
 
 		sl.subheader("Points d'amélioration")
-		sl.write("- pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs (vu que le format pickle permet des fichiers plus légers)")
+		sl.write("- Pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs")
+		sl.write("- Traduction des synopsis en français")

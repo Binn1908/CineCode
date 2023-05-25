@@ -1,3 +1,4 @@
+from PIL import Image
 import streamlit as sl
 
 def tab_cinecode():
@@ -12,6 +13,8 @@ def tab_cinecode():
 
 	with tab1:
 		sl.subheader("L'équipe")
+		image_group = Image.open('group.png')
+		sl.sidebar.image(image_group)
 		sl.write("Chinnawat, Khalid, Jacques")
 
 		sl.subheader("Mission")

@@ -12,10 +12,7 @@ def tab_cinecode():
 
 	with tab1:
 		sl.subheader("L'équipe")
-		col1, col2, col3 = sl.columns([1,1,1])
-		col1.write("Chinnawat")
-		col2.write("Jacques")
-		col3.write("Khalid")
+		sl.write("Chinnawat, Khalid, Jacques")
 
 		sl.subheader("Mission")
 		sl.write("- Création d'un outil de recommandation de films pour un cinéma dans la Creuse souhaitant passer le cap du digital")		

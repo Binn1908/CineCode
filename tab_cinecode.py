@@ -18,18 +18,18 @@ def tab_cinecode():
 		col3.write('Khalid')
 
 		sl.subheader('Mission')
-		sl.write("- Analyse d’une base de données IMDB et création d’un outil de recommandation de film sur cette même base de données après un nettoyage des données")
+		sl.write("- Analyse d’une base de données IMDB et création d’un outil de recommandation de films sur cette même base de données après un nettoyage des données")
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- sélection des films sur la base des données d'IMDb...")
+		sl.write("- Nous avons commencé par nettoyer la base de données IMDB afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et sélectionner uniquement les infos qui nous semblaient pertinentes. Ensuite, nous avons créé une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation.")
 
 		sl.subheader('Outils utilisés')
 		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, API...')
 
 	with tab3:
 		sl.subheader('Machine Learning')
-		sl.write('- k-NN...')
+		sl.write("- KNN : Nous avons choisi d’utiliser l’algorithme KNN (proches voisins) pour notre projet de recommandation de films en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
 
 	with tab4:
 		sl.subheader('Difficultés rencontrées')

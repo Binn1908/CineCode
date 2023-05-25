@@ -22,8 +22,9 @@ def tab_cinecode():
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Nous avons commencé par nettoyer la base de données IMDB afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et sélectionner uniquement les infos qui nous semblaient pertinentes. Ensuite, nous avons créé une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation.")
-
+		sl.write('- Nettoyer la BDD IMDB afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données.')
+		sl.write('- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation.')
+			 
 		sl.subheader('Outils utilisés')
 		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, API...')
 
@@ -33,8 +34,8 @@ def tab_cinecode():
 
 	with tab4:
 		sl.subheader('Difficultés rencontrées')
-		sl.write('- manque de diversité (genres)')
-		sl.write('- dataset trop volumineux...')
+		sl.write('- Volume de base de données important')
+		sl.write('Filtrer la base de données sans perdre des films cultes/classiques')
 
 		sl.subheader("Points d'amélioration")
 		sl.write("- pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs (vu que le format pickle permet des fichiers plus légers)")

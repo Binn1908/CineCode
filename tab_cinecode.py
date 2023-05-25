@@ -35,7 +35,7 @@ def tab_cinecode():
 	with tab4:
 		sl.subheader('Difficultés rencontrées')
 		sl.write('- Volume de base de données important')
-		sl.write('Filtrer la base de données sans perdre des films cultes/classiques')
+		sl.write('- Filtrer la base de données sans perdre des films cultes/classiques')
 
 		sl.subheader("Points d'amélioration")
 		sl.write("- pour affiner les résultats : retravailler le dataset avec plus de choix et plus d'acteurs (vu que le format pickle permet des fichiers plus légers)")

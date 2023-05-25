@@ -32,12 +32,12 @@ def tab_cinecode():
 			 			
 		sl.subheader('Outils utilisés')
 		sl.write("- Analyse et nettoyage des données : Pandas, Matplotlib")
-		sl.write("- Machine learning : Scikit-learn")
+		sl.write("- Machine learning : scikit-learn")
 		sl.write("- Expérience utilisateur : Streamlit, IMDb API")
 
 	with tab3:
 		sl.subheader('Machine Learning')
-		sl.write("- KNN : Nous avons choisi d’utiliser l’algorithme KNN (proches voisins) en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
+		sl.write("- Utilisation de l’algorithme KNN (K plus proches voisins) en raison de sa capacité à trouver des films similaires en fonction des préférences de l’utilisateur en se basant sur les caractéristiques des films et en identifiant les voisins les plus proches dans l’espace de caractéristiques.")
 
 	with tab4:
 		sl.subheader('Difficultés rencontrées')

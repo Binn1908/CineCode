@@ -12,7 +12,10 @@ def tab_cinecode():
 
 	with tab1:
 		sl.subheader("L'équipe")
-		sl.write('Chinnawat, Jacques, Khalid')
+		col1, col2, col3 = sl.columns([1,1,1])
+		col1.write('Chinnawat')
+		col2.write('Jacques')
+		col3.write('Khalid')
 
 		sl.subheader('Mission')
 		sl.write("- Analyse d’une base de données IMDB et création d’un outil de recommandation de film sur cette même base de données après un nettoyage des données")

@@ -18,12 +18,16 @@ def tab_cinecode():
 		col3.write('Khalid')
 
 		sl.subheader('Mission')
-		sl.write("- Création d'un outil de recommandation de films pour un cinéma dans la Creuse souhaitant passer le cap du digital en se basant sur une sélection de films de la base de données IMDb")		
+		sl.write("- Création d'un outil de recommandation de films pour un cinéma dans la Creuse souhaitant passer le cap du digital")		
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Nettoyer la BDD IMDb afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données")
-		sl.write('- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation')
+		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents
+		sl.write("	- éliminer les données inutiles")
+		sl.write("	- corriger les erreurs")
+		sl.write("	- fusionner les différents datasets")
+		sl.write("	- normaliser les formats et filtrer les données")
+		sl.write("- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films")
 			 
 		sl.subheader('Outils utilisés')
 		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, IMDb API')

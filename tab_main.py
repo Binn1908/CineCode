@@ -55,6 +55,7 @@ def tab_main():
 				duration = imdb.iloc[propo[1][0][n], 3]
 				score = imdb.iloc[propo[1][0][n], 4]
 				url_imdb = 'https://www.imdb.com/title/' + tconst
+				url_full_cast = 'https://www.imdb.com/title/' + tconst + '/fullcredits'
 
 				#get more info via API
 				url_basic = 'https://imdb8.p.rapidapi.com/auto-complete'
@@ -67,6 +68,18 @@ def tab_main():
 				response = requests.get(url_synopsis, headers = headers, params = tconst)
 				synopsis = response.json()['plots'][0]['text']
 
+				url_cast = 'https://imdb8.p.rapidapi.com/title/get-full-credits'
+				tconst = {'tconst': imdb.iloc[propo[1][0][n], 0]}
+				response = requests.get(url_cast, headers = headers, params = tconst)
+				number_cast = len(response.json()['cast'])
+				cast_principal = response.json()['cast'][0]['name']
+				if number_cast < 3:
+					for c in range(1, number_cast):
+						cast_principal = cast_principal + ', ' + response.json()['cast'][c]['name']
+				else:
+					for c in range(1, 3):
+						cast_principal = cast_principal + ', ' + response.json()['cast'][c]['name']
+	
 				#display results in different columns on the main tab
 				col1, col2 = sl.columns([1,3]) #size proportion of columns
 				col1.image(image_url)
@@ -74,8 +87,7 @@ def tab_main():
 				col2.write(f'{str(duration)} min')
 				col2.write(f'**Note IMDb:** {score}/10')
 				col2.write(synopsis)
-				#url_imdb_cast = url_imdb + '/fullcredits'
-				#col2.markdown(f'**[casting principal]({url_imdb_cast})**')
+				col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')
 
 	sl.divider()
 
@@ -143,6 +155,7 @@ def tab_main():
 			duration = imdb.iloc[propo[1][0][n], 3]
 			score = imdb.iloc[propo[1][0][n], 4]
 			url_imdb = 'https://www.imdb.com/title/' + tconst
+			url_full_cast = 'https://www.imdb.com/title/' + tconst + '/fullcredits'
 
 			#get more info via API
 			url_basic = 'https://imdb8.p.rapidapi.com/auto-complete'
@@ -155,6 +168,18 @@ def tab_main():
 			response = requests.get(url_synopsis, headers = headers, params = tconst)
 			synopsis = response.json()['plots'][0]['text']
 
+			url_cast = 'https://imdb8.p.rapidapi.com/title/get-full-credits'
+			tconst = {'tconst': imdb.iloc[propo[1][0][n], 0]}
+			response = requests.get(url_cast, headers = headers, params = tconst)
+			number_cast = len(response.json()['cast'])
+			cast_principal = response.json()['cast'][0]['name']
+			if number_cast < 3:
+				for c in range(1, number_cast):
+					cast_principal = cast_principal + ', ' + response.json()['cast'][c]['name']
+			else:
+				for c in range(1, 3):
+					cast_principal = cast_principal + ', ' + response.json()['cast'][c]['name']
+	
 			#display results in different columns on the main tab
 			col1, col2 = sl.columns([1,3]) #size proportion of columns
 			col1.image(image_url)
@@ -162,3 +187,4 @@ def tab_main():
 			col2.write(f'{str(duration)} min')
 			col2.write(f'**Note IMDb:** {score}/10')
 			col2.write(synopsis)
+			col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')

@@ -22,7 +22,7 @@ def tab_cinecode():
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents
+		sl.write("- Exploration et nettoyage de la BDD IMDb afin de proposer aux locaux de la Creuse une sélection de films pertinents")
 		sl.write("	- éliminer les données inutiles")
 		sl.write("	- corriger les erreurs")
 		sl.write("	- fusionner les différents datasets")

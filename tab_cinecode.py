@@ -14,7 +14,7 @@ def tab_cinecode():
 	with tab1:
 		sl.subheader("L'équipe")
 		image_group = Image.open('group.png')
-		sl.image(image_group)
+		sl.image(image_group, width = 300)
 		sl.write("Chinnawat, Khalid, Jacques")
 
 		sl.subheader("Mission")

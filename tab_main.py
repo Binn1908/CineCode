@@ -87,7 +87,7 @@ def tab_main():
 				col2.write(f'{str(duration)} min')
 				col2.write(f'**Note IMDb:** {score}/10')
 				col2.write(synopsis)
-				col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')
+				col2.write(f'**Casting principal:** {cast_principal} [(...)]({url_full_cast})')
 				
 				if n != 3:
 					sl.divider()
@@ -190,7 +190,7 @@ def tab_main():
 			col2.write(f'{str(duration)} min')
 			col2.write(f'**Note IMDb:** {score}/10')
 			col2.write(synopsis)
-			col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')
+			col2.write(f'**Casting principal:** {cast_principal} [(...)]({url_full_cast})')
 			
 			if n != 3:
 				sl.divider()

@@ -22,8 +22,8 @@ def tab_cinecode():
 
 	with tab2:
 		sl.subheader('Notre démarche')
-		sl.write("- Nettoyer la BDD IMDd afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données.")
-		sl.write('- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation.')
+		sl.write("- Nettoyer la BDD IMDb afin d’éliminer les données inutiles, corriger les erreurs et normaliser les formats et filtrer les données")
+		sl.write('- Création d’une interface utilisateur conviviale en utilisant Streamlit pour présenter les recommandations de films personnalisées aux utilisateurs et faciliter leur expérience de navigation')
 			 
 		sl.subheader('Outils utilisés')
 		sl.write('- Pandas, Matplotlib, scikit-learn, Streamlit, IMDb API')

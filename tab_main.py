@@ -89,9 +89,10 @@ def tab_main():
 				col2.write(synopsis)
 				col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')
 				
-				sl.divider()
+				if n != 3:
+					sl.divider()
 
-	#sl.divider()
+	sl.divider()
 
 	sl.write("<span style='font-size: 29px; color: #F8B405;'>Recherche avancée</span>", unsafe_allow_html=True)
 
@@ -191,4 +192,5 @@ def tab_main():
 			col2.write(synopsis)
 			col2.write(f'**Casting principal :** {cast_principal} [(...)]({url_full_cast})')
 			
-			sl.divider()
+			if n != 3:
+				sl.divider()

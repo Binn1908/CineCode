@@ -52,5 +52,4 @@ def tab_cinecode():
 		
 		#sl.subheader("Points d'amélioration")
 		sl.write("<span style='font-size: 29px; color: #F8B405;'>Points d'amélioration</span>", unsafe_allow_html=True)
-		sl.write("- Pour affiner les résultats : retravailler le dataset avec plus de choix")
 		sl.write("- Traduction des synopsis en français")

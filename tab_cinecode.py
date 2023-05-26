@@ -16,7 +16,7 @@ def tab_cinecode():
 		sl.write("<span style='font-size: 29px; color: #F8B405;'>L'équipe</span>", unsafe_allow_html=True)
 		image_group = Image.open('group.png')
 		sl.image(image_group, width = 350)
-		sl.write("Chinnawat, Khalid, Jacques")
+		sl.write("- Chinnawat, Khalid, Jacques")
 
 		#sl.subheader("Mission")
 		sl.write("<span style='font-size: 29px; color: #F8B405;'>Mission</span>", unsafe_allow_html=True)
